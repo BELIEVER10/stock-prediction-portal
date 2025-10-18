@@ -6,12 +6,14 @@ import Register from './components/Register';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Login from './components/Login';
+import AuthProvider from './AuthProvider';
 
 
 function App() {
 
   return (
     <>
+    <AuthProvider>
       <Router>
         <Header/>
         <Routes>
@@ -21,6 +23,7 @@ function App() {
         </Routes>
         <Footer/>
       </Router>
+    </AuthProvider>
     </>
   )
 }
