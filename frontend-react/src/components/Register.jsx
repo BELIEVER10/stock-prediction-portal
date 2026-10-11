@@ -44,7 +44,7 @@ const Register = () => {
           <form onSubmit={handleRegistration}>
 
             <div className='mb-3'>
-              <input type="text" placeholder='username' className='form-control' value={username} onChange={(e) => setusername(e.target.value)} />
+              <input type="text" placeholder='Username' className='form-control' value={username} onChange={(e) => setusername(e.target.value)} />
                <small>{errors.username && <div className='text-danger'>{errors.username}</div>}</small>
             </div>
 
